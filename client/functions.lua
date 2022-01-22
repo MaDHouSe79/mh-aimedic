@@ -24,11 +24,29 @@ function Behandeling(dokter)
     waiting = true
 end
 
-function SendMail()
+function SendMail(mail_sender, mail_subject, mail_message)
     TriggerServerEvent('qb-phone:server:sendNewMail', {
-	sender  = Config.Ped['ambulance'].name,
-	subject = "Medische hulp",
-	message = "Hello " .. gender .. " " .. charinfo.lastname .. ",<br /><br />We have just received a message that someone wants to take driving lessons<br />If you are willing to teach, please contact us:<br />Naam: <strong>".. charinfo.firstname .. " " .. charinfo.lastname .. "</strong><br />Phone Number: <strong>"..charinfo.phone.."</strong><br/><br/>Kind regards,<br />Township Los Santos",
+	sender  = mail_sender,
+	subject = mail_subject,
+	message = mail_message,
 	button  = {}
     })
+end
+
+function GetStreetName()
+    local ped       = GetPlayerPed(-1);
+    local veh       = GetVehiclePedIsIn(ped, false);
+    local coords    = GetEntityCoords(PlayerPedId());
+    local zone      = GetNameOfZone(coords.x, coords.y, coords.z);
+    local zoneLabel = GetLabelText(zone);
+    local var1, var2 = GetStreetNameAtCoord(coords.x, coords.y, coords.z, Citizen.ResultAsInteger(), Citizen.ResultAsInteger())
+    hash1 = GetStreetNameFromHashKey(var1);
+    hash2 = GetStreetNameFromHashKey(var2);
+    local street;
+    if (hash2 == '') then
+	street = zoneLabel;
+    else
+	street = hash2..', '..zoneLabel;
+    end
+    return street;
 end
