@@ -8,21 +8,21 @@ version '1.0'
 
 shared_scripts {
     '@qb-core/shared/locale.lua',
-	'@qb-core/shared/jobs.lua',
-	'locales/*.lua',
+    '@qb-core/shared/jobs.lua',
+    'locales/*.lua',
     'config.lua',
 }
 
 client_scripts {
-	'client/main.lua',
-	'client/commands.lua',
-	'client/events.lua',
-	'client/functions.lua',
+    'client/main.lua',
+    'client/commands.lua',
+    'client/events.lua',
+    'client/functions.lua',
 }
 
 server_scripts {
-	'@oxmysql/lib/MySQL.lua',
-	'server/main.lua',
-	'server/callbacks.lua',
-	'server/functions.lua',
+    '@oxmysql/lib/MySQL.lua',
+    'server/main.lua',
+    'server/callbacks.lua',
+    'server/functions.lua',
 }
