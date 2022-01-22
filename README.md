@@ -24,6 +24,3 @@ Be kind to me cause it's my first FiveM Mod i put online.
 ## Languages
 - en
 - nl
-
-## To Do
-- Create next is an AI-Tow and a AI-Mechanic, for the same purpose as the AI-Medic.
