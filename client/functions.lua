@@ -23,9 +23,9 @@ function Behandeling(dokter)
     RemovePedElegantly(dokter)
     waiting = true
     SendMail(
-		Lang:t('mail.sender', {docter = Config.Ped['ambulance'].name}), 
-		Lang:t('mail.subject'), 
-		Lang:t('mail.message', {streetName = GetStreetName(), username = PlayerData.charinfo.firstname, company = Config.Ped['ambulance'].company})
+	Lang:t('mail.sender', {docter = Config.Ped['ambulance'].name}), 
+	Lang:t('mail.subject'), 
+	Lang:t('mail.message', {streetName = GetStreetName(), username = PlayerData.username, company = Config.Ped['ambulance'].company})
     )
 end
 
