@@ -24,7 +24,6 @@ function Behandeling(dokter)
     waiting = true
 end
 
-
 function SendMail()
     TriggerServerEvent('qb-phone:server:sendNewMail', {
 	sender  = Config.Ped['ambulance'].name,
