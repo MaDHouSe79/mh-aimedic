@@ -13,6 +13,12 @@ local Translations = {
         getting_treatment = "The doctor is giving you medical aid",
         waiting_message   = "You must wait until the dockter if ready",
     },
+    
+    mail = {
+        ["sender"]        = "%{docter}",
+        ["subject"]       = "Medical assistance",
+        ["message"]       = "Hey, %{username}<br /><br />A invoice for Medical assistance!<br />Location: <strong>Garage %{streetName}</strong><br /><br/><br/>Kind regard,<br />%{company}",
+    },
 }
 
 Lang = Locale:new({
