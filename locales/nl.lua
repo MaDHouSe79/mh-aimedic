@@ -13,13 +13,13 @@ local Translations = {
         getting_treatment = "De dokter geeft je medische hulp",
         waiting_message   = "Je moet wachten totdat de dokter klaar is.",
     },
-
-    mail = {
-        sender = "",
-        subject = "Medische hulp",
-        message = "",
-    }
     
+    mail = {
+        ["sender"]        = "%{docter}",
+        ["subject"]       = "Medische hulp",
+        ["message"]       = "Hey, %{username}<br /><br />Een rekening voor Medische hulp!<br />Locatie: <strong>%{streetName}</strong><br /><br/><br/>Met vriendelijke groet,<br />%{company}",
+    },
+}
 
 Lang = Locale:new({
     phrases = Translations,
