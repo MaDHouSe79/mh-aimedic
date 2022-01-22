@@ -1,11 +1,10 @@
 ## QBCore AI Medic Version 1.0
 Tis is a very cool AI-Medic mod specially made for [qb-core](https://github.com/qbcore-framework/qb-core) servers, 
-just in case there are no medics online.
+just in case there are no medics online or not that much, and it's bisy on your server.
 
-Players can stil play on your server and ask for this medic if needed, 😁 
+Players can stil play on your server and ask for this medic if realy needed, 😁 
 
-but it wil cost them huge money to use 😁
-
+But it wil cost them money to use it 😁
 
 
 ## How To Use
