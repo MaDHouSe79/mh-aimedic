@@ -3,3 +3,6 @@ Tis is a very cool ai medic mod specially made for [qb-core](https://github.com/
 just in case there is no medic or ambulance online,
 
 players can stil play on your nd ask for this medic if needed, 😁 but it wil cost you money 😁
+
+
+To do: create next is an AI-Tow and a AI-Mechanic, for the same purpose as the AI-Medic.
