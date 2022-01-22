@@ -16,5 +16,9 @@ but it wil cost them huge money to use 😁
 - Restart your server.
 - Enjoy using my mod
 
+## Languages
+- nl
+- en
+
 ## To Do
 - Create next is an AI-Tow and a AI-Mechanic, for the same purpose as the AI-Medic.
