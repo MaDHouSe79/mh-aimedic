@@ -10,8 +10,8 @@ but it wil cost them huge money to use 😁
 - type /aimedic
 
 ## Install
-- renname the folder to qb-aimedic
-- make sure all file are in qb-aimedic and not in a folder insite qb-aimedic
+- Renname the folder to qb-aimedic
+- Make sure all file are in qb-aimedic and not in a folder insite qb-aimedic
 - Copy this folder qb-aimedic and drop it in the [qb] folder.
 - Restart your server.
 - Enjoy using my mod
