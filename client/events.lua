@@ -1,3 +1,7 @@
+RegisterNetEvent('QBCore:Client:OnPlayerLoaded', function()	
+    PlayerData = QBCore.Functions.GetPlayerData(); 
+end)
+
 AddEventHandler("qb-aimedic:client:loadDockter", function()
     player          = GetPlayerPed(-1)
     local playerPos = GetEntityCoords(player)
