@@ -9,7 +9,7 @@ function NPCDoktor(x, y, z, doktorModel)
 end
 
 function BeginBehandeling(dokter)
-    QBCore.Functions.Notify(Lang:t('info.getting_treatment'), "primary", 5000)
+    QBCore.Functions.Notify(Lang:t('info.getting_treatment'), "primary", Config.NotifyShowTime)
     Citizen.Wait(20000)
     ClearPedTasks(dokter)
     Behandeling(dokter)
