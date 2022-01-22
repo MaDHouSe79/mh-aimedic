@@ -7,8 +7,7 @@ Players can stil play on your server and ask for this medic if needed, 😁
 but it wil cost them huge money to use 😁
 
 ## How To Use
-- type /aimedic
-- Players get an email on there phone.
+- type /aimedic and you will get a phone notification.
 
 
 ## Install
