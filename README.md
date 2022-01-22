@@ -1,4 +1,4 @@
-## QBCore AI EMS Version 1.0
+## QBCore AI Medic Version 1.0
 Tis is a very cool AI-Medic mod specially made for [qb-core](https://github.com/qbcore-framework/qb-core) servers, 
 just in case there are no medics online.
 
