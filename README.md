@@ -15,7 +15,7 @@ Be kind to me cause it's my first FiveM Mod i put online.
 
 
 ## Install
-- Renname the folder to qb-aimedic
+- Rename the folder to qb-aimedic
 - Make sure all file are in qb-aimedic and not in a folder insite qb-aimedic
 - Copy this folder qb-aimedic and drop it in the [qb] folder.
 - Restart your server.
