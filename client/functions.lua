@@ -19,7 +19,7 @@ function Behandeling(dokter)
     Citizen.Wait(500)
     TriggerEvent('hospital:client:Revive', -1)
     TriggerEvent("hospital:client:HealInjuries", -1, "full")
-    QBCore.Functions.Notify(Lang:t('success.treatment_done',{value = Config.MoneyFormat..Config.treatCost}), "success", 5000)
+    QBCore.Functions.Notify(Lang:t('success.treatment_done',{value = Config.MoneyFormat..Config.treatCost}), "success", Config.NotifyShowTime)
     RemovePedElegantly(dokter)
     waiting = true
 end
