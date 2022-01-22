@@ -19,8 +19,8 @@ QBCore.Functions.CreateCallback('qb-aimedic:server:PayJob', function(source, cb,
 	TriggerClientEvent('hospital:client:Revive', source)
 	SocietyAccount(job)
 	cb({
-		status = true, 
-		message = Lang:t('info.getting_treatment') 
+	    status = true, 
+	    message = Lang:t('info.getting_treatment') 
 	})
     else
 	if Player.Functions.RemoveMoney("bank", Config.treatCost, "revived-player") then
