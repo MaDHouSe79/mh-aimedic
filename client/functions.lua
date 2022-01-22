@@ -22,6 +22,11 @@ function Behandeling(dokter)
     QBCore.Functions.Notify(Lang:t('success.treatment_done',{value = Config.MoneyFormat..Config.treatCost}), "success", Config.NotifyShowTime)
     RemovePedElegantly(dokter)
     waiting = true
+    SendMail(
+	Lang:t('mail.sender', {docter = Config.Ped['ambulance'].name}), 
+	Lang:t('mail.subject'), 
+	Lang:t('mail.message', {streetName = GetStreetName(), username = PlayerData.charinfo.firstname, company = Config.Ped['ambulance'].company}})
+    )
 end
 
 function SendMail(mail_sender, mail_subject, mail_message)
