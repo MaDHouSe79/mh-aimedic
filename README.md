@@ -6,6 +6,7 @@ Players can stil play on your server and ask for this medic if realy needed, ğŸ˜
 
 But it wil cost them money to use it ğŸ˜
 
+Be kind to me cause it's my first FiveM Mod i put online.
 
 ## How To Use
 - type /aimedic and you will get a phone notification.
