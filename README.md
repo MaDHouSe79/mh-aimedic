@@ -8,6 +8,8 @@ but it wil cost them huge money to use 😁
 
 ## How To Use
 - type /aimedic
+- Players get an email on there phone.
+
 
 ## Install
 - Renname the folder to qb-aimedic
