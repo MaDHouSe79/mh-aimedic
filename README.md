@@ -15,6 +15,8 @@ just in case there are little to no medical staff online and or the server is bu
 
 ## Notes
 - This is my first release so please be kind :)
+- The amount to charge clients can be changed in Config.lua
+
 ## Languages
 - en
 - nl
