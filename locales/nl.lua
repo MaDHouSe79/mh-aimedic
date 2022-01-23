@@ -7,7 +7,7 @@ local Translations = {
         unknow_error      = "Onbekende fout...",
     },
     success = {
-        treatment_done    = "Uw behandeling is voltooid, u werd in rekening gebracht: %value",
+        treatment_done    = "Uw behandeling is voltooid, u werd in rekening gebracht: %{value}",
     },
     info = {
         getting_treatment = "De dokter geeft je medische hulp",
