@@ -7,7 +7,7 @@ local Translations = {
         unknow_error      = "Unknow error...",
     },
     success = {
-        treatment_done    = "Your treatment is done, you were charged: %value",
+        treatment_done    = "Your treatment is done, you were charged: %{value}",
     },
     info = {
         getting_treatment = "The doctor is giving you medical aid",
