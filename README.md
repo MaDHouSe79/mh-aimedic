@@ -7,9 +7,8 @@ just in case there are little to no medical staff online and or the server is bu
 - Using this when you have a busy server and your medics can't get to wounded clients in time.
 
 ## Install
-- Rename the folder to qb-aimedic
-- Make sure all file are in qb-aimedic and not in a folder insite qb-aimedic
-- Copy this folder qb-aimedic and drop it in the [qb] folder.
+### - MAKE SURE THAT THE FOLDER IS CALLED qb-aimedic
+- Drop qb-aimedic in the [qb] folder.
 - Restart your server.
 - Enjoy using my mod
 
