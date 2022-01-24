@@ -1,5 +1,5 @@
 QBCore.Functions.CreateCallback('qb-aimedic:server:GetOnlineEMS', function(source, cb, job)
-    local result = QBCore.Functions.GetDutyCount('ambulance')
+    local result = QBCore.Functions.GetDutyCount(job)
     if result ~= nil or result >= 0 then
 	cb({
 	    status = true,
