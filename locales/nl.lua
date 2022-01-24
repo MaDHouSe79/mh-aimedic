@@ -15,9 +15,9 @@ local Translations = {
     },
     
     mail = {
-        ["sender"]        = "%{docter}",
-        ["subject"]       = "Medische hulp",
-        ["message"]       = "Hey, %{username}<br /><br />Een rekening voor Medische hulp!<br />Locatie: <strong>%{streetName}</strong><br /><br/><br/>Met vriendelijke groet,<br />%{company}",
+        sender            = "%{docter}",
+        subject           = "Medische hulp",
+        message           = "Hey, %{username}<br /><br />Een rekening voor Medische hulp!<br />Locatie: <strong>%{streetName}</strong><br /><br/><br/>Met vriendelijke groet,<br />%{company}",
     },
 }
 
