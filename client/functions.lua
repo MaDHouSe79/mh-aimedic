@@ -5,17 +5,17 @@ function NPCDoktor(x, y, z, doktorModel)
 	Citizen.Wait(1000)
     end
     TaskPlayAnim(dokter, "mini@cpr@char_a@cpr_str","cpr_pumpchest",1.0, 1.0, -1, 9, 1.0, 0, 0, 0)
-    BeginBehandeling(dokter)
+    StartTreatment(dokter)
 end
 
-function BeginBehandeling(dokter)
+function StartTreatment(dokter)
     QBCore.Functions.Notify(Lang:t('info.getting_treatment'), "primary", Config.NotifyShowTime)
     Citizen.Wait(20000)
     ClearPedTasks(dokter)
-    Behandeling(dokter)
+    Treatment(dokter)
 end
 
-function Behandeling(dokter)
+function Treatment(dokter)
     Citizen.Wait(500)
     TriggerEvent('hospital:client:Revive', -1)
     TriggerEvent("hospital:client:HealInjuries", -1, "full")
@@ -44,11 +44,10 @@ function GetStreetName()
     local coords    = GetEntityCoords(PlayerPedId());
     local zone      = GetNameOfZone(coords.x, coords.y, coords.z);
     local zoneLabel = GetLabelText(zone);
-    local var1, var2 = GetStreetNameAtCoord(coords.x, coords.y, coords.z, Citizen.ResultAsInteger(), Citizen.ResultAsInteger())
-    hash1 = GetStreetNameFromHashKey(var1);
-    hash2 = GetStreetNameFromHashKey(var2);
+    local var       = GetStreetNameAtCoord(coords.x, coords.y, coords.z, Citizen.ResultAsInteger(), Citizen.ResultAsInteger())
+    hash            = GetStreetNameFromHashKey(var);
     local street;
-    if (hash2 == '') then
+    if (hash == '') then
 	street = zoneLabel;
     else
 	street = hash2..', '..zoneLabel;
