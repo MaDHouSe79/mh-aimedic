@@ -13,7 +13,6 @@ local Translations = {
         getting_treatment = "De dokter geeft je medische hulp",
         waiting_message   = "Je moet wachten totdat de dokter klaar is.",
     },
-    
     mail = {
         sender            = "%{docter}",
         subject           = "Medische hulp",
