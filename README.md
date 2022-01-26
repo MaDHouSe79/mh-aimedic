@@ -20,5 +20,6 @@ just in case there are little to no medical staff online and or the server is bu
 - en
 - nl
 
-## Youtube : https://www.youtube.com/channel/UC6431XeIqHjswry5OYtim0A
-## Discord : https://discord.gg/cEMSeE9dgS
+## Youtube and Discord
+Youtube : https://www.youtube.com/channel/UC6431XeIqHjswry5OYtim0A
+Discord : https://discord.gg/cEMSeE9dgS
