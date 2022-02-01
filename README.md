@@ -1,4 +1,4 @@
-## QBCore AI Medic Version 1.0
+## QBCore AI Medic
 This is a very cool AI-Medic mod specially made for [qb-core](https://github.com/qbcore-framework/qb-core) servers, 
 just in case there are little to no medical staff online and or the server is busy.
 
