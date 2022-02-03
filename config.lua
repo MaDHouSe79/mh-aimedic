@@ -8,8 +8,10 @@ Config.MinOnLineDoktors  = 2                   -- How many ambulance jobs have t
 Config.treatCost         = 2000                -- The treat costs (change if needed)
 Config.spawnRadius       = 100                 -- Not active yet
 
+
 Config.Ped = {
     ['ambulance'] = {
+        command          = "ambulance",        -- command.
         company          = "Eerste Hulp",      -- The Company name used for sending mails
         name             = "Doktor bibber",    -- The name of the docter using for sending mail
         model            = "s_m_m_doctor_01",  -- The model bed to spawn...
