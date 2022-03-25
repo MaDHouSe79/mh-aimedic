@@ -45,12 +45,12 @@ function GetStreetName()
     local zone      = GetNameOfZone(coords.x, coords.y, coords.z);
     local zoneLabel = GetLabelText(zone);
     local var       = GetStreetNameAtCoord(coords.x, coords.y, coords.z, Citizen.ResultAsInteger(), Citizen.ResultAsInteger())
-    hash            = GetStreetNameFromHashKey(var);
+    local hash      = GetStreetNameFromHashKey(var);
     local street;
     if (hash == '') then
 	street = zoneLabel;
     else
-	street = hash2..', '..zoneLabel;
+	street = hash..', '..zoneLabel;
     end
     return street;
 end
