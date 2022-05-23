@@ -1,7 +1,7 @@
 local QBCore = exports['qb-core']:GetCoreObject()
-PlayerData = {}
-waiting = true
-player, dokter = nil
+local PlayerData = {}
+local waiting = true
+local player, dokter = nil
 
 local function GetStreetName()
     local ped = GetPlayerPed(-1)
