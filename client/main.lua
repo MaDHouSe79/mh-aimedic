@@ -79,10 +79,10 @@ AddEventHandler("qb-aimedic:client:loadDockter", function()
     ClearPedTasksImmediately(player)
 end)
 
-RegisterCommand('aimedic', function(source) 
+RegisterCommand('aimedic', function() 
     if waiting then
-	PlayerData = QBCore.Functions.GetPlayerData(source)
-        if PlayerData.metadata['isdead'] then
+        PlayerData = QBCore.Functions.GetPlayerData()
+        if PlayerData.metadata['isdead'] or PlayerData.metadata['inlaststand'] then
             QBCore.Functions.TriggerCallback('qb-aimedic:server:GetOnlineEMS', function(cb)
                 if cb.status then
                     if cb.online <= Config.MinOnLineDoktors then
