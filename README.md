@@ -15,6 +15,8 @@ just in case there are little to no medical staff online and or the server is bu
 ## Notes
 - This is my first release so please be kind :)
 - The amount to charge clients can be changed in Config.lua
+- if you want to use inlaststand, Add this to the if statement in client.lua on line 85: `or PlayerData.metadata['inlaststand']`
+
 
 ## Languages
 - en
