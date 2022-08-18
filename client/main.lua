@@ -82,7 +82,7 @@ end)
 RegisterCommand('aimedic', function() 
     if waiting then
         PlayerData = QBCore.Functions.GetPlayerData()
-        if PlayerData.metadata['isdead'] then
+        if PlayerData.metadata['isdead'] --[[ or PlayerData.metadata['inlaststand'] ]] then
             QBCore.Functions.TriggerCallback('qb-aimedic:server:GetOnlineEMS', function(cb)
                 if cb.status then
                     if cb.online <= Config.MinOnLineDoktors then
