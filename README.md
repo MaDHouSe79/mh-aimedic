@@ -10,7 +10,7 @@ Here is the [mh-aiems](https://github.com/MaDHouSe79/mh-aiems) link
 
 ## Install
 - MAKE SURE THAT THE FOLDER IS CALLED qb-aimedic
-- Drop qb-aimedic in the [qb] folder.
+- Drop mh-aimedic in the [qb] folder.
 - Restart your server.
 - Enjoy using my mod
 
