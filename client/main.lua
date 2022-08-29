@@ -62,7 +62,7 @@ RegisterNetEvent('QBCore:Player:SetPlayerData', function(data)
     PlayerData = data
 end)
 
-AddEventHandler("qb-aimedic:client:loadDockter", function()
+AddEventHandler("mh-aimedic:client:loadDockter", function()
     player = GetPlayerPed(-1)
     local playerPos = GetEntityCoords(player)
     local dokter = GetHashKey(Config.Ped['ambulance'].model)
@@ -83,12 +83,12 @@ RegisterCommand('aimedic', function()
     if waiting then
         PlayerData = QBCore.Functions.GetPlayerData()
         if PlayerData.metadata['isdead'] --[[ or PlayerData.metadata['inlaststand'] ]] then
-            QBCore.Functions.TriggerCallback('qb-aimedic:server:GetOnlineEMS', function(cb)
+            QBCore.Functions.TriggerCallback('mh-aimedic:server:GetOnlineEMS', function(cb)
                 if cb.status then
                     if cb.online <= Config.MinOnLineDoktors then
-                        QBCore.Functions.TriggerCallback("qb-aimedic:server:PayJob", function(cb)
+                        QBCore.Functions.TriggerCallback("mh-aimedic:server:PayJob", function(cb)
                             if cb.status then
-                                TriggerEvent("qb-aimedic:client:loadDockter")
+                                TriggerEvent("mh-aimedic:client:loadDockter")
                                 waiting = false
                                 QBCore.Functions.Notify(cb.message, "primary", Config.NotifyShowTime)
                             else
