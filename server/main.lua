@@ -7,7 +7,7 @@ local function SocietyAccount(job)
     TriggerClientEvent('hospital:client:SendBillEmail', job, Config.treatCost)
 end
 
-QBCore.Functions.CreateCallback('qb-aimedic:server:GetOnlineEMS', function(source, cb, job)
+QBCore.Functions.CreateCallback('mh-aimedic:server:GetOnlineEMS', function(source, cb, job)
     local result = QBCore.Functions.GetDutyCount(job)
     if result ~= nil or result >= 0 then
         cb({
@@ -22,7 +22,7 @@ QBCore.Functions.CreateCallback('qb-aimedic:server:GetOnlineEMS', function(sourc
     end
 end)
 
-QBCore.Functions.CreateCallback('qb-aimedic:server:PayJob', function(source, cb, job)
+QBCore.Functions.CreateCallback('mh-aimedic:server:PayJob', function(source, cb, job)
     local Player = QBCore.Functions.GetPlayer(source)
     if Player.Functions.RemoveMoney("cash", Config.treatCost, "revived-player") then
         TriggerClientEvent('hospital:client:Revive', source)
