@@ -4,7 +4,7 @@ Config.NotifyShowTime    = 5000                -- All notivication display time 
 Config.MoneyFormat       = '€'                 -- $ or € or your ond format
 Config.UseSocietyAccount = true                -- With true the Society Account gets the money.
 Config.GradePayment      = 2                   -- Not active yet
-Config.MinOnLineDoktors  = 2                   -- How many ambulance jobs have to be online to make this work, you can set this to 0 if you have a huge server and les time to get to players.
+Config.MinOnLineDoktors  = 2                   -- How many ambulance jobs have to be online to make this work.
 Config.treatCost         = 2000                -- The treat costs (change if needed)
 Config.spawnRadius       = 100                 -- Not active yet
 
