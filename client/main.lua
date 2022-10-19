@@ -83,25 +83,20 @@ RegisterCommand('aimedic', function()
     if waiting then
         PlayerData = QBCore.Functions.GetPlayerData()
         if PlayerData.metadata['isdead'] --[[ or PlayerData.metadata['inlaststand'] ]] then
-            QBCore.Functions.TriggerCallback('mh-aimedic:server:GetOnlineEMS', function(cb)
-                if cb.status then
-                    if cb.online <= Config.MinOnLineDoktors then
-                        QBCore.Functions.TriggerCallback("mh-aimedic:server:PayJob", function(cb)
-                            if cb.status then
-                                TriggerEvent("mh-aimedic:client:loadDockter")
-                                waiting = false
-                                QBCore.Functions.Notify(cb.message, "primary", Config.NotifyShowTime)
-                            else
-                                QBCore.Functions.Notify(cb.message, "error", Config.NotifyShowTime)
-                            end
-                        end, 'ambulance')
-                    end
-                    if cb.online > Config.MinOnLineDoktors then
-                        QBCore.Functions.Notify(Lang:t('error.to_many_medics'), "error", Config.NotifyShowTime)
-                    end
-                else
-                    QBCore.Functions.Notify(Lang:t('error.unknow_error'), "error", Config.NotifyShowTime)
-                end
+            QBCore.Functions.TriggerCallback('mh-aimedic:server:GetOnlineEMS', function(online)
+		if online <= 0 then
+		    QBCore.Functions.TriggerCallback("mh-aimedic:server:PayJob", function(cb)
+		        if cb.status then
+			    TriggerEvent("mh-aimedic:client:loadDockter")
+			    waiting = false
+			    QBCore.Functions.Notify(cb.message, "primary", Config.NotifyShowTime)
+			else
+			    QBCore.Functions.Notify(cb.message, "error", Config.NotifyShowTime)
+			end
+		    end, 'ambulance')
+		else
+		    QBCore.Functions.Notify(Lang:t('error.to_many_medics'), "error", Config.NotifyShowTime)
+	        end
             end, 'ambulance')
         else
              QBCore.Functions.Notify("You are not dead...", "error", Config.NotifyShowTime)
