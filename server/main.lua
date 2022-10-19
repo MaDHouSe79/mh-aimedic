@@ -8,18 +8,7 @@ local function SocietyAccount(job)
 end
 
 QBCore.Functions.CreateCallback('mh-aimedic:server:GetOnlineEMS', function(source, cb, job)
-    local result = QBCore.Functions.GetDutyCount(job)
-    if result ~= nil or result >= 0 then
-        cb({
-            status = true,
-            online = result
-        })
-    else
-        cb({
-            status = false,
-            online = 0
-        })
-    end
+    cb(QBCore.Functions.GetDutyCount(job))
 end)
 
 QBCore.Functions.CreateCallback('mh-aimedic:server:PayJob', function(source, cb, job)
